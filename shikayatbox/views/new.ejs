@@ -1,0 +1,33 @@
+<%- include("partials/header") %>
+<style>
+    .a{
+        margin:25px;
+        padding: 15px;
+        text-align: center;
+        border: 2px solid lightblue;
+        border-radius: 20px;
+    }
+    .b2{
+        width: 380px;
+        
+    }
+</style>
+<div class="a">
+        <h2>Write Your Complaint Below</h2>
+        <hr>
+        <form action="/" method="POST">
+        </br>
+            <textarea  name="naari[description]" rows="16" cols="50" placeholder="type here..." required></textarea>
+        </br>
+    </br>
+            <input class="b2" type="tel" name="naari[phone]" placeholder="your phone number" required>
+    </br>
+</br>
+    <input class="b2" type="text" name="naari[location]" placeholder="location" required>    
+</br>
+</br>
+            <button class="btn btn-success btn-lg">SUBMIT</button>
+        </form>
+    
+</div>
+<%- include("partials/footer") %>

@@ -1,0 +1,39 @@
+<%- include("partials/header") %>
+<style>
+    
+    .form-control{
+        width: 70%;
+        margin-right: 25px;
+        margin-left: 25px;
+        
+
+    }
+    .btn.btn-danger{
+        
+        margin-right: 400px;
+    }
+    .flxcnt{
+        text-align: center;
+        
+    }
+    .flxcnt>div{
+        width: 600px;
+        height: 200px;
+        padding: 20px;
+        display: inline-block;
+        margin-top: 10px;
+        
+    }
+    
+</style>
+<div class="flxcnt">
+    <div>
+<form  action="/noresponse" method="POST">
+    <div class="form-group">
+ <input class="form-control" type="tel" name="naari[phone]" placeholder="enter your registered phone number" required>
+ </div>
+ <button class="btn btn-danger">Submit</button>
+</form>
+</div>
+</div>
+<%- include("partials/footer") %>
